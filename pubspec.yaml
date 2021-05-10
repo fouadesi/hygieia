@@ -32,6 +32,7 @@ dependencies:
   flutter_svg: ^0.22.0
   keyboard_visibility: ^0.5.6
   flutter_datetime_picker: ^1.5.1
+  http: ^0.13.3
 
 
 dev_dependencies:
