@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hygeia/slides/views/component/widget.page1.dart';
+import 'package:hygeia/users/controller/login.dart';
+import 'package:hygeia/users/view/auth/widget.login.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
 
       ),
       debugShowCheckedModeBanner: false,
-      home:  Page1(),
+      home:  Login(),
     );
   }
 }
