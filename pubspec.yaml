@@ -33,6 +33,7 @@ dependencies:
   keyboard_visibility: ^0.5.6
   flutter_datetime_picker: ^1.5.1
   http: ^0.13.3
+  shared_preferences: ^2.0.5
 
 
 dev_dependencies:
