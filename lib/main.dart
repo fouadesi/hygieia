@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hygeia/slides/views/component/widget.page1.dart';
-import 'package:hygeia/users/users/auth/widget.login.dart';
 
 void main() {
   runApp(MyApp());
