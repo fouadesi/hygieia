@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-<<<<<<< Updated upstream
-import 'package:hygeia/slides/views/component/widget.page1.dart';
-import 'package:hygeia/users/controller/login.dart';
-import 'package:hygeia/users/view/auth/widget.login.dart';
-=======
+
 import 'package:hygeia/slides/views/widget.slide.dart';
->>>>>>> Stashed changes
+
 
 void main() {
   runApp(MyApp());
@@ -21,11 +17,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-<<<<<<< Updated upstream
-      home:  Login(),
-=======
       home:  OnboardingScreen(),
->>>>>>> Stashed changes
+
     );
   }
 }
