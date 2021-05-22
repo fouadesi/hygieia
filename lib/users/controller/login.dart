@@ -14,7 +14,6 @@ login(String email, String pass, context) async {
     jsonresponse = jsonDecode(res.body);
     print('Response status ${res.statusCode}');
     print('Response body ${res.body}');
-
     if (jsonresponse != null) {
       sharedPrefrences.setString("token", jsonresponse['token']);
       Navigator.pushAndRemoveUntil(
