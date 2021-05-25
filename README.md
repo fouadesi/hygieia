@@ -1,4 +1,4 @@
-# hygeia
+# hygieia
 
 A new Flutter application.
 
