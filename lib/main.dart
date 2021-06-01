@@ -3,6 +3,7 @@ import 'package:hygeia/slides/views/component/widget.page2.dart';
 
 import 'package:hygeia/slides/views/widget.slide.dart';
 import 'package:hygeia/users/view/auth/widget.login.dart';
+import 'package:hygeia/users/view/profile/changepassword/widget.changepassword.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:after_layout/after_layout.dart';
 void main() {
@@ -45,7 +46,7 @@ class _FirstScreenState extends State<FirstScreen> with AfterLayoutMixin<FirstSc
     bool _seen = (prefs.getBool('seen') ?? false);
     if (_seen) {
       Navigator.of(context).pushReplacement(
-          new MaterialPageRoute(builder: (context) =>  Login()));
+          new MaterialPageRoute(builder: (context) =>  ChangePassword()));
     } else {
       await prefs.setBool('seen', true);
       Navigator.of(context).pushReplacement(
