@@ -46,7 +46,7 @@ class _FirstScreenState extends State<FirstScreen> with AfterLayoutMixin<FirstSc
     bool _seen = (prefs.getBool('seen') ?? false);
     if (_seen) {
       Navigator.of(context).pushReplacement(
-          new MaterialPageRoute(builder: (context) =>  ChangePassword()));
+          new MaterialPageRoute(builder: (context) =>  Login()));
     } else {
       await prefs.setBool('seen', true);
       Navigator.of(context).pushReplacement(

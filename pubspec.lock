@@ -135,6 +135,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.0.0"
+  ionicons:
+    dependency: "direct main"
+    description:
+      name: ionicons
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.2"
   js:
     dependency: transitive
     description:
@@ -343,6 +350,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.2.19"
+  top_snackbar_flutter:
+    dependency: "direct main"
+    description:
+      name: top_snackbar_flutter
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   typed_data:
     dependency: transitive
     description:
