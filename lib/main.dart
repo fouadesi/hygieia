@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-          // "hot reload" (press "r" in the console where you ran "flutter run",
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
