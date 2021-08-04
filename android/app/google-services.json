@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "474094447554",
+    "project_id": "hygeia-312122",
+    "storage_bucket": "hygeia-312122.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474094447554:android:9e22fe1f1fb2067124845b",
+        "android_client_info": {
+          "package_name": "debug.hygei.hygeia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474094447554-k0sn1mol0hg76mo9foptjrjism1ci8qp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4Qh4o6ibDNtNptsNbDynAMLQ5_8nZAi8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474094447554-k0sn1mol0hg76mo9foptjrjism1ci8qp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

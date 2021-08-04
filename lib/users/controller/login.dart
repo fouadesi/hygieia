@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 login(String email, String pass, context) async {
-  String url = "http://192.168.43.189:3000/users/patient/login";
+  String url = "http://192.168.1.8:3000/users/patient/login";
   SharedPreferences.setMockInitialValues({});
   SharedPreferences sharedPrefrences = await SharedPreferences.getInstance();
   Map body = {"email": email, "password": pass};

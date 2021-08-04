@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.766" height="21" viewBox="0 0 20.766 21">
+  <g id="stethoscope" transform="translate(-35.501)">
+    <g id="Groupe_286" data-name="Groupe 286" transform="translate(35.501 0.818)">
+      <g id="Groupe_285" data-name="Groupe 285">
+        <path id="Tracé_249" data-name="Tracé 249" d="M47,19.932H44.545v1.533h1.686v2.887a4.6,4.6,0,0,1-9.2,0V21.465h1.635V19.932h-2.4a.766.766,0,0,0-.766.766v3.653a6.131,6.131,0,1,0,12.263,0V20.7A.766.766,0,0,0,47,19.932Z" transform="translate(-35.501 -19.932)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Groupe_288" data-name="Groupe 288" transform="translate(42.701 10.628)">
+      <g id="Groupe_287" data-name="Groupe 287" transform="translate(-1.991)">
+        <path id="Tracé_250" data-name="Tracé 250" d="M176.377,260.494v3.628c0,2.113-2.232,3.832-4.976,3.832s-4.976-1.719-4.976-3.832v-5.007h-1.99v5.007c0,2.958,3.125,5.365,6.966,5.365s6.966-2.407,6.966-5.365v-3.628Z" transform="translate(-164.434 -259.114)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Groupe_290" data-name="Groupe 290" transform="translate(50.595 7.051)">
+      <g id="Groupe_289" data-name="Groupe 289">
+        <path id="Tracé_251" data-name="Tracé 251" d="M341.052,171.912a2.836,2.836,0,1,0,2.836,2.836A2.839,2.839,0,0,0,341.052,171.912Zm0,4.139a1.3,1.3,0,1,1,1.3-1.3A1.3,1.3,0,0,1,341.052,176.051Z" transform="translate(-338.216 -171.912)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Groupe_292" data-name="Groupe 292" transform="translate(37.877)">
+      <g id="Groupe_291" data-name="Groupe 291">
+        <path id="Tracé_252" data-name="Tracé 252" d="M94.194,0a.766.766,0,0,0-.766.766V2.4a.766.766,0,0,0,1.533,0V.766A.766.766,0,0,0,94.194,0Z" transform="translate(-93.428)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Groupe_294" data-name="Groupe 294" transform="translate(43.763)">
+      <g id="Groupe_293" data-name="Groupe 293">
+        <path id="Tracé_253" data-name="Tracé 253" d="M238.7,0a.766.766,0,0,0-.766.766V2.4a.766.766,0,0,0,1.533,0V.766A.766.766,0,0,0,238.7,0Z" transform="translate(-237.934)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

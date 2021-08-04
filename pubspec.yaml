@@ -37,6 +37,16 @@ dependencies:
   shared_preferences: ^2.0.5
   ionicons: ^0.1.2
   top_snackbar_flutter: ^1.0.0
+  sizer: ^2.0.13
+  device_preview: ^0.7.4
+  provider: ^5.0.0
+  jwt_decode: ^0.3.1
+  firebase_auth: ^1.0.1
+  firebase_core: ^1.0.2
+  cloud_firestore: ^1.0.3
+  image_picker: ^0.7.4
+  firebase_storage: ^8.0.1
+  calendar_calendar: ^1.0.0
 
 
 dev_dependencies:

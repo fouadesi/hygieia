@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.109" height="20.042" viewBox="0 0 20.109 20.042">
+  <g id="logout" transform="translate(0 -0.85)">
+    <g id="Groupe_176" data-name="Groupe 176" transform="translate(0 0.85)">
+      <g id="Groupe_175" data-name="Groupe 175">
+        <path id="Tracé_228" data-name="Tracé 228" d="M10.021,19.222H2.505a.835.835,0,0,1-.835-.835V3.355a.835.835,0,0,1,.835-.835h7.516a.835.835,0,0,0,0-1.67H2.505A2.508,2.508,0,0,0,0,3.355V18.387a2.508,2.508,0,0,0,2.505,2.505h7.516a.835.835,0,0,0,0-1.67Z" transform="translate(0 -0.85)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Groupe_178" data-name="Groupe 178" transform="translate(6.681 5.026)">
+      <g id="Groupe_177" data-name="Groupe 177">
+        <path id="Tracé_229" data-name="Tracé 229" d="M183.279,112.416l-5.077-5.01a.835.835,0,0,0-1.172,1.189l3.628,3.581h-9.723a.835.835,0,1,0,0,1.67h9.723l-3.628,3.581a.835.835,0,1,0,1.172,1.189l5.077-5.01a.835.835,0,0,0,0-1.189Z" transform="translate(-170.1 -107.165)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

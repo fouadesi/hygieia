@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+  <g id="Groupe_263" data-name="Groupe 263" transform="translate(-242 -410)">
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="8.5" cy="8.5" r="8.5" transform="translate(242 410)" fill="#ff1c42"/>
+    <path id="vote" d="M130.349,161.8l-1.95,1.95-1.95-1.95a1.109,1.109,0,0,0-1.568,1.568l1.95,1.95-1.95,1.95a1.109,1.109,0,1,0,1.568,1.568l1.95-1.95,1.95,1.95a1.109,1.109,0,1,0,1.568-1.568l-1.95-1.95,1.95-1.95a1.109,1.109,0,0,0-1.568-1.568Z" transform="translate(122.145 253.226)" fill="#f3f5f4" fill-rule="evenodd"/>
+  </g>
+</svg>

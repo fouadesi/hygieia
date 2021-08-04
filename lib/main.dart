@@ -1,61 +1,75 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:hygeia/slides/views/component/widget.page2.dart';
-
-import 'package:hygeia/slides/views/widget.slide.dart';
+import 'package:hygeia/users/controller/PatientProvider.dart';
+import 'package:hygeia/users/controller/authController.dart';
+import 'package:hygeia/users/data/model/patient.dart';
+import 'package:hygeia/users/view/Home/widget.home.dart';
 import 'package:hygeia/users/view/auth/widget.login.dart';
-import 'package:hygeia/users/view/profile/changepassword/widget.changepassword.dart';
+import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:after_layout/after_layout.dart';
-void main() {
+import 'package:sizer/sizer.dart';
+
+import 'users/controller/userPreferences.dart';
+
+void main() async {
+  await  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
+
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      debugShowCheckedModeBanner: false,
-      home: FirstScreen(),
+    Future<Patient> getUserData() => UserPreferences().getUser();
+    SharedPreferences.getInstance().then((value) =>
+       print( value.getString("Firstname")) ) ;
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => AuthProvider()),
+        ChangeNotifierProvider(create: (_) => UserProvider()),
+      ],
+      child: Sizer(
+        builder: (context,orientation,deviceType)=> MaterialApp(
+            title: 'Flutter Demo',
+            debugShowCheckedModeBanner: false,
+            theme: ThemeData(
+              primarySwatch: Colors.blue,
+              visualDensity: VisualDensity.adaptivePlatformDensity,
+            ),
+            home: FutureBuilder(
+                future: getUserData(),
+                builder: (context, snapshot) {
+                  switch (snapshot.connectionState) {
+                    case ConnectionState.none:
+                    case ConnectionState.waiting:
+                      return CircularProgressIndicator();
+                    default:
+                      if (snapshot.hasError)
+                        return Text('Error: ${snapshot.error}');
+                      else if (snapshot.data.name == null)
+                        return Login();
+                      else
+                      return Welcome(snapshot.data);
 
+                  }
+                }),
+            routes: {
+
+            }),
+      ),
     );
   }
 }
-class FirstScreen extends StatefulWidget {
-  const FirstScreen({Key key}) : super(key: key);
-  @override
-  _FirstScreenState createState() => _FirstScreenState();
-}
-class _FirstScreenState extends State<FirstScreen> with AfterLayoutMixin<FirstScreen>{
+class Welcome extends StatelessWidget {
+  Patient patient ;
+ Welcome(this.patient);
+
+
   @override
   Widget build(BuildContext context) {
-    return Container();
+    print(patient.name);
+    Provider.of<UserProvider>(context).setUser(patient);
+    return Home();
   }
-  Future checkFirstSeen() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    bool _connected = (prefs.getString('token') ?? false);
-    if(_connected) {
-      Navigator.of(context).pushReplacement(
-          new MaterialPageRoute(builder: (context) =>  Text('home')));
-      return;
-    }
-    bool _seen = (prefs.getBool('seen') ?? false);
-    if (_seen) {
-      Navigator.of(context).pushReplacement(
-          new MaterialPageRoute(builder: (context) =>  Login()));
-    } else {
-      await prefs.setBool('seen', true);
-      Navigator.of(context).pushReplacement(
-          new MaterialPageRoute(builder: (context) => OnboardingScreen()));
-    }
-  }
-
-  @override
-  void afterFirstLayout(BuildContext context) => checkFirstSeen();
-
-
 }
 
